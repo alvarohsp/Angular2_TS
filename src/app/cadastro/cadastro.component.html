@@ -1,0 +1,9 @@
+
+<div>
+    <label for="nome" class="form-label">Produto</label>
+    <input class="form-control" name="=nome" id="nome" [(ngModel)]="produto.nome">
+    <label for="preco" class="form-label">Preço</label>
+    <input class="form-control" name="=preco" id="preco" [(ngModel)]="produto.preco">
+
+    <button type="button" class="btn btn-success" (click)="adicionar()">{{textoBotaoCadastro}}</button>
+</div>

@@ -1,0 +1,32 @@
+<table class="table table-striped" *ngIf="carregarLoading; else carregando">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Preço</th>
+        <th scope="col">Editar</th>
+        <th scope="col">Excluir</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let p of produtos">
+        <th scope="row" >{{p.id}}</th>
+        <td>{{p.nome}}</td>
+        <td>{{p.preco | currency:'BRL'}}</td>
+        <td><button type="button" class="btn btn-warning" (click)="editarItem(p.id)" >Editar</button></td>
+        <td><button type="button" class="btn btn-danger" (click)="excluirItem(p.id)" >Excluir</button></td>  
+      </tr>
+    </tbody>
+  </table>
+
+  <ng-template #carregando >
+    <div id="preloader">
+      <div class="inner">
+         <div class="bolas">
+            <div></div>
+            <div></div>
+            <div></div>                    
+         </div>
+      </div>
+  </div>
+  </ng-template>
