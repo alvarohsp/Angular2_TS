@@ -1,9 +1,21 @@
+<div class="header">
+    <h1>Cadastro</h1>
+    <h4>{{textoH4}}</h4>
+</div>
 
-<div>
-    <label for="nome" class="form-label">Produto</label>
-    <input class="form-control" name="=nome" id="nome" [(ngModel)]="produto.nome">
-    <label for="preco" class="form-label">Preço</label>
-    <input class="form-control" name="=preco" id="preco" [(ngModel)]="produto.preco">
+<div class="cadastro container">
 
-    <button type="button" class="btn btn-success" (click)="adicionar()">{{textoBotaoCadastro}}</button>
+    <div class="labelForm">
+        <label id="lb-nome" for="nome">Produto:</label>
+        <label id="lb-marca" for="marca">Marca:</label>
+        <label id="lb-preco" for="preco">Preço:</label>
+    </div>
+    <div class="cadastroForm">  
+        <input class="form-control" name="=nome" id="nome" [(ngModel)]="produto.nome">    
+        <input class="form-control" name="=marca" id="marca" [(ngModel)]="produto.marca">    
+        <input class="form-control" name="=preco" id="preco" [(ngModel)]="produto.preco">
+
+        <button type="button" class={{classeBotaoCadastro}} (click)="adicionar()">{{textoBotaoCadastro}}</button>
+        <button type="button" class="limpar" (click)="limpar()">Limpar</button>
+    </div>
 </div>

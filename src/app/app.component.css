@@ -18,33 +18,52 @@
     color: #125699;
   }
 
- 
-  /* Responsive Styles */
-  @media screen and (max-width: 767px) {
-
-    .card-container > *:not(.circle-link) ,
-    .terminal {
-      width: 100%;
-    }
-
-    .card:not(.highlight-card) {
-      height: 16px;
-      margin: 8px 0;
-    }
-
-    .card.highlight-card span {
-      margin-left: 72px;
-    }
-
-    svg#rocket-smoke {
-      right: 120px;
-      transform: rotate(-5deg);
-    }
+  .navS {
+    position: fixed;
+    top: 0;
+    width: 100%;  
+    z-index: 9999;
+    border-bottom: 2px solid rgb(66, 44, 189);
   }
 
-  @media screen and (max-width: 575px) {
-    svg#rocket-smoke {
-      display: none;
-      visibility: hidden;
-    }
+  .footer {
+    display:inline-block;
+    margin-top: 150px; 
+    bottom: 0;
+    left: 0;
+    margin-left: 25%;
+    width: 50%;
+    height: 45px;
+    background-color: rgba(41, 0, 80, 0.274);
+    border-radius: 5px 5px 5px 5px;
+    border-top: 3px solid rgba(48, 0, 82, 0.65);
+    border-left: 3px solid rgba(48, 0, 82, 0.65);
+    border-right: 3px solid rgba(48, 0, 82, 0.65);
+    border-bottom: 3px solid rgba(48, 0, 82, 0.65);
+    text-align: center;
+    color: white;
+  }
+
+  p.footerLabel {
+    margin-top: 9px;
+    font-size: 17px;
+  }
+
+  .imgGH {
+    float: right;
+    margin-right: 12px;
+    margin-top: -4px;
+    cursor: pointer;
+    background-image: url('../assets/GitHub-Mark-Light-32px.png');
+    height: 32px;
+    width: 32px;
+    box-shadow: 2px 2px 1px -1px rgba(16, 1, 58, 0.794);
+    transition: 0.3s;
+    border-radius: 100%;
+  }
+
+  .imgGH:hover {
+    box-shadow: 5px 3px 3px -1px rgba(16, 1, 58, 0.952);
+    transition: 0.3s;
+
   }

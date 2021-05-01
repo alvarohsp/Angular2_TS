@@ -13,6 +13,7 @@ export class HomeComponent implements OnInit {
   prod: any
   produtos: Array <Produto> = []
   carregarLoading: boolean = false
+  produtoNomeDel: string = ''
 
   constructor(
     private produtoService: ProdutoService,
@@ -26,19 +27,20 @@ export class HomeComponent implements OnInit {
       setTimeout(() => {
         this.produtos = prods
         this.carregarLoading = true
-      },300)
+      },350)
 
     })       
   }
 
   excluirItem = (id: any) => {
     
-    this.produtoService.excluirItem(id).subscribe(
-      success => console.log("Deletou"),
-      error => console.log("Erro"),
-      () => console.log('Requisição completa')
-    )
-    this.ngOnInit()
+    if (confirm(`Tem certeza que deseja deletar o produto ?`)){
+      this.produtoService.excluirItem(id).subscribe(
+        success => this.ngOnInit(),
+        error => console.log("Erro"),
+        () => console.log('Requisição completa')
+      )
+    }  
   }
 
   editarItem = (id: any) => {

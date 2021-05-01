@@ -1,24 +1,32 @@
-<table class="table table-striped" *ngIf="carregarLoading; else carregando">
+<div class="header">
+<h1>Banco de dados</h1>
+<h4>Projeto Angular 2 e TypeScript</h4>
+</div>
+
+<div class="tableS container">
+  <table class="table table-striped" *ngIf="carregarLoading; else carregando">
     <thead>
       <tr>
-        <th scope="col">#</th>
-        <th scope="col">Nome</th>
-        <th scope="col">Preço</th>
-        <th scope="col">Editar</th>
-        <th scope="col">Excluir</th>
+        <th class="stickyS" scope="col">#</th>
+        <th class="stickyS" scope="col">Produto</th>
+        <th class="stickyS" scope="col">Marca</th>
+        <th class="stickyS" scope="col">Preço</th>
+        <th class="stickyS" scope="col">Editar</th>
+        <th class="stickyS" scope="col">Excluir</th>
       </tr>
     </thead>
     <tbody>
       <tr *ngFor="let p of produtos">
         <th scope="row" >{{p.id}}</th>
         <td>{{p.nome}}</td>
+        <td>{{p.marca}}</td>
         <td>{{p.preco | currency:'BRL'}}</td>
-        <td><button type="button" class="btn btn-warning" (click)="editarItem(p.id)" >Editar</button></td>
-        <td><button type="button" class="btn btn-danger" (click)="excluirItem(p.id)" >Excluir</button></td>  
+        <td style="width: 20px"><button type="button" class="edit" (click)="editarItem(p.id)" >Editar</button></td>
+        <td style="width: 20px"><button type="button" class="del" (click)="excluirItem(p.id)" >Excluir</button></td>  
       </tr>
     </tbody>
   </table>
-
+</div>
   <ng-template #carregando >
     <div id="preloader">
       <div class="inner">

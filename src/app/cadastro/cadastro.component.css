@@ -1,0 +1,111 @@
+.header {
+    margin-top: 60px;
+    padding: 60px;
+    text-align: center; 
+    color: white;
+    font-size: 30px;
+}
+
+div.cadastro {
+    padding: 30px;
+    border-radius: 10px 10px 10px 10px;
+    border: 3px solid rgba(34, 1, 95, 0.712);
+    background-color: rgb(255, 255, 255);
+}  
+
+h4 {
+    font-size: 19px;
+    font-style: italic;
+}
+
+div.cadastroForm {
+    margin-left: 90px;
+    width: 80%;
+}
+
+div.labelForm {
+    text-align: right;
+    padding-top: 40px;
+    display: block;
+    height: 40px;
+    width: 75px;
+    font-size: 19px;
+}
+
+#lb-nome {
+    padding-top: 3px;
+}
+
+#lb-marca {
+    padding-top: 23px;
+}
+
+#lb-preco {
+    padding-top: 25px;
+}
+
+#marca {
+    margin-top: 20px;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+#preco {
+    width: 20%;
+}
+
+button.cadastro {
+    margin-top: 30px;
+    background-color: #5726caea;
+    border: #2f059000;
+    border-radius: 2px;
+    color: rgb(255, 255, 255);
+    padding: 9px 9px;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.45s;
+    margin-right: 25px;
+}
+  
+button.cadastro:hover {
+    background-color: #2f0590;
+    transition: 0.15s;
+}
+
+button.editar {
+    margin-top: 30px;
+    background-color: #616bfbea;
+    border: #2f059000;
+    border-radius: 2px;
+    color: rgb(255, 255, 255);
+    padding: 9px 9px;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.45s;
+    margin-right: 25px;
+}
+  
+button.editar:hover {
+    background-color: #323fffea;
+    transition: 0.15s;
+}
+
+button.limpar {
+    margin-top: 30px;
+    background-color: #ababacea;
+    border: #2f059000;
+    border-radius: 2px;
+    color: rgb(255, 255, 255);
+    padding: 9px 9px;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.45s;
+}
+  
+  button.limpar:hover {
+    background-color: #585858;
+    transition: 0.15s;
+}

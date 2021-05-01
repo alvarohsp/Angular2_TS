@@ -2,28 +2,92 @@
   "produtos": [
     {
       "id": 1,
-      "nome": "Teclado Clone caro",
-      "preco": 99.99
-    },
-    {
-      "id": 2,
-      "nome": "mouse razer",
-      "preco": 150.35
+      "nome": "Teclado K41",
+      "marca": "Gigabyte",
+      "preco": "220"
     },
     {
       "id": 3,
-      "nome": "intel",
-      "preco": 40.1
+      "nome": "Mouse Deathadder",
+      "marca": "Razer",
+      "preco": "439",
+      "desconto": 10
     },
     {
       "id": 4,
-      "nome": "amd",
-      "preco": 600
+      "nome": "Fone intra-auricular",
+      "marca": "Sony",
+      "preco": "86",
+      "desconto": 10
     },
     {
       "id": 5,
-      "nome": "Razer",
-      "preco": "179",
+      "nome": "Ryzen 5 3600",
+      "marca": "AMD",
+      "preco": "1599",
+      "desconto": 10
+    },
+    {
+      "id": 6,
+      "nome": "Ryzen 5 5600x",
+      "marca": "AMD",
+      "preco": "2260",
+      "desconto": 10
+    },
+    {
+      "id": 7,
+      "nome": "Core i7 9700k",
+      "marca": "intel",
+      "preco": "899",
+      "desconto": 10
+    },
+    {
+      "id": 8,
+      "nome": "Core i7 10700",
+      "marca": "intel",
+      "preco": "1799",
+      "desconto": 10
+    },
+    {
+      "id": 9,
+      "nome": "Core i7 10700k",
+      "marca": "intel",
+      "preco": "2100",
+      "desconto": 10
+    },
+    {
+      "id": 11,
+      "nome": "Core i9 11900k",
+      "marca": "intel",
+      "preco": "4300",
+      "desconto": 10
+    },
+    {
+      "id": 12,
+      "nome": "RTX 3070 8gb",
+      "marca": "nvidia",
+      "preco": "7999",
+      "desconto": 10
+    },
+    {
+      "id": 13,
+      "nome": "RTX 3080 10gb",
+      "marca": "nvidia",
+      "preco": "10700",
+      "desconto": 10
+    },
+    {
+      "id": 14,
+      "nome": "RTX 3090 24gb",
+      "marca": "nvidia",
+      "preco": "23900",
+      "desconto": 10
+    },
+    {
+      "id": 15,
+      "nome": "RX 6800 XT 16gb XFX",
+      "marca": "AMD",
+      "preco": "9999",
       "desconto": 10
     }
   ]

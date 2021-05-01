@@ -1,3 +1,73 @@
+h4 {
+  font-size: 19px;
+  font-style: italic;
+}
+
+div.tableS {
+  padding: 3px;
+  border-radius: 0 0 10px 10px;
+  border: 3px solid rgba(34, 1, 95, 0.712);
+  background-color: rgb(255, 255, 255);
+
+}
+
+th.stickyS {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 60px;
+  background: rgba(131, 112, 241, 0.876);
+  z-index: 9998;
+  box-shadow: 0 1px 1px -1px rgba(18, 16, 133, 0.185);
+}
+
+.header {
+  margin-top: 60px;
+  padding: 60px;
+  text-align: center; 
+  color: white;
+  font-size: 30px;
+}
+
+button.del {
+  background-color: #8356fd78;
+	border-radius: 10%;
+  border: 1px solid #6c4cfaaf;
+	color: rgba(0, 0, 0, 0.0);
+	padding: 7px 7px;
+	display: inline-block;
+  cursor: pointer;
+  font-size: 14px;
+	transition: 0.55s;
+}
+
+button.del:hover {
+	background-color: #6918ffc0;
+  color: rgb(255, 255, 255);
+  border-radius: 0%;
+	transition: 0.15s;
+}
+
+button.edit {
+  background-color: #68aeff78;
+	border-radius: 10%;
+  border: 1px solid #6c4cfaaf;
+	color: rgba(0, 0, 0, 0.0);
+	padding: 7px 7px;
+	display: inline-block;
+  cursor: pointer;
+  font-size: 14px;
+	transition: 0.55s;
+}
+
+button.edit:hover {
+	background-color: #59a7ffc0;
+  color: rgb(255, 255, 255);
+  border-radius: 0%;
+	transition: 0.15s;
+}
+
+
+
 #preloader {
     position:fixed;
     top:0;
@@ -14,7 +84,8 @@
 }
 .bolas > div {
   display: inline-block;
-  background-color: rgb(189, 64, 64);
+  background-color: rgb(102, 34, 228);
+  border: 1px solid rgba(255, 255, 255, 0.603);
   width: 25px;
   height: 25px;
   border-radius: 100%;

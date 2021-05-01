@@ -13,8 +13,10 @@ import { ProdutoService } from './../service/produto.service';
 export class CadastroComponent implements OnInit {
 
   id: any
-  produto: Produto = new Produto(0, '', 0)
+  produto: Produto = new Produto(0, '', '', 0)
   textoBotaoCadastro: string = 'Cadastrar'
+  classeBotaoCadastro: string = "cadastro"
+  textoH4: string = "Cadastro de novos produtos"
 
 
   constructor(
@@ -30,13 +32,13 @@ export class CadastroComponent implements OnInit {
       if (parametros['id']){
         this.id = parametros['id']
         this.textoBotaoCadastro = "Editar"
+        this.classeBotaoCadastro = "editar"
+        this.textoH4 = "Editando produto"
+
         this.prodService.listarItem(this.id).subscribe(prod => {
           this.produto = prod
         })
-
-        
-        
-        console.log(this.id)
+     
       }
     })
 
@@ -44,16 +46,20 @@ export class CadastroComponent implements OnInit {
 
     adicionar = () => {
 
-      if (this.textoBotaoCadastro == 'Cadastrar'){
-        this.prodService.adicionarItem(this.produto).subscribe(
-          success => this.navegar('home'),
-          error => console.log("Erro"),
-          () => console.log('Requisição completa'))
+      if (this.produto.nome != '' && this.produto.preco != 0){
 
+        if (this.textoBotaoCadastro == 'Cadastrar'){
+          this.prodService.adicionarItem(this.produto).subscribe(
+            success => this.navegar('home'),
+            error => console.log("Erro"),
+            () => console.log('Requisição completa'))
+
+        }else{
+          this.editar()
+        }
       }else{
-        this.editar()
+        alert("Favor preencher pelo menos o nome e o preço do produto, a marca não é obrigatória")
       }
-    
     }
 
     editar = () => {
@@ -69,5 +75,9 @@ export class CadastroComponent implements OnInit {
 
     }
  
-
+    limpar = () => {
+      this.produto.marca = ''
+      this.produto.nome = ''
+      this.produto.preco = 0
+    }
 }
